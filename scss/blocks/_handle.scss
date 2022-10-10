@@ -1,0 +1,51 @@
+@media screen and (min-width: 907px){
+    .handle__title{
+        line-height: 76px!important;
+    }
+}
+
+.handle-two{
+    background-image: url("../../images/hero-bg-2.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 500px) calc(50% + 90px);
+}
+
+.handle__button{
+    padding: 19px 33px;
+    background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #00040E;
+}
+
+.handle__list{
+    max-width: 470px;
+}
+
+.handle__item{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 104px;
+    border-radius: 20px;
+    &::before{
+        position: absolute;
+        left: 20px;
+        content: "";
+        background-image: url("../../images/icons/star-icon.svg");
+        background-repeat: no-repeat;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    &:nth-child(2)::before{
+        background-image: url("../../images/icons/secure-icon.svg");
+    }
+    &:last-child:before{
+        background-image: url("../../images/icons/telegram-icon.svg");
+    }
+    &:hover{
+        background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101D 95.11%);
+        box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+    }
+}
+

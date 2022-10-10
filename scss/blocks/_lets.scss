@@ -1,0 +1,26 @@
+.lets__button{
+    background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+    border-radius: 10px;
+}
+
+.lets__wrapper{
+    padding-top: 31px;
+    padding-left: 19px;
+    padding-right: 21px;
+    padding-bottom: 31px;
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .lets__wrapper{
+        padding-top: 72px;
+        padding-left: 97px;
+        padding-right: 100px;
+        padding-bottom: 72px;
+        background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+}

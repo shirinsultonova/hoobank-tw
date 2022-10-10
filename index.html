@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HooBank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "bg-color": '#010510'
+                    },
+                    screens: {
+                        sm: '640px',
+                        md: '768px',
+                        lg: '1024px',
+                        xl: '1210px',
+                        '2xl': '1210px'
+                    },
+                    container: {
+                        padding: {
+                            sm: '20px',
+                            lg: '20px',
+                            xl: '20px',
+                            '2xl': '20px',
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+
+<body class="bg-bg-color">
+    <!-- Header section started -->
+    <header class="site-header pt-8 ">
+        <div class="container">
+            
+            <div class="site-header__wrapper flex justify-between items-center">
+                <a href="./index.html">
+                    <img src="./images/icons/site-logo.svg"
+                    width="118"
+                    height="32"
+                    alt="HooBank's logo">
+                </a>
+                
+                <nav class="site-header__nav">
+                    <ul class="site-header__list flex text-white">
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="#">Home</a>
+                        </li>
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="#">About Us</a>
+                        </li>
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="#">Features</a>
+                        </li>
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="#">Solution</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <button class="site-header__button" type="button"></button>
+            </div>
+        </div>
+    </header>
+    <!-- Header section ended -->
+    
+    <main class="site-main">
+        <!-- Hero section started -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper before:sm:left relative after:absolute">
+                    <div class="hero__sub-wrapper relative inline-block before:absolute before:w-8 before:h-8 mb-3  ">
+                        <p class="text-sm md:text-lg"><span class="text-white opacity-100">20%</span> DISCOUNT FOR <span class="text-white opacity-100">1 MONTH</span> ACCOUNT</p>
+                    </div>
+                    
+                    <div>
+                        <h1 class="hero__heading text-white font-semibold lg:text-7xl md:text-5xl text-4xl">
+                            The Next <br> <span class="hero__heading-span font-semibold lg:text-7xl md:text-5xl md:leading-relaxed">Generation</span> <br>   
+                            Payment Method.
+                        </h1>
+                    </div>
+                    
+                    <div class="hero__description-wrapper mt-10">
+                        <p class="hero__description text-lg text-white opacity-60 ">
+                            Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. 
+                            We examine annual percentage rates, annual fees.
+                        </p>
+                    </div>
+                </div>
+                
+                <ul class="hero__list text-white flex justify-center flex-col text-center sm:flex-row sm:justify-between">
+                    <li class="hero__item flex flex-col items-center mb-8 lg:flex-row lg:justify-between">
+                        <p class="hero__cost font-semibold">3800+</p>
+                        <span class="text-xl uppercase lg:ml-6">User Active</span>
+                    </li>
+                    <li class="hero__item flex flex-col items-center mb-8 before:hidden after:hidden sm:before:block sm:after:block lg:flex-row lg:justify-between">
+                        <p class="hero__cost font-semibold">230+</p>
+                        <span class="text-xl uppercase lg:ml-6">TRUSTED BY COMPANY</span>
+                    </li>
+                    <li class="hero__item flex flex-col items-center mb-8 lg:flex-row lg:justify-between">
+                        <p class="hero__cost font-semibold">$230M+</p>
+                        <span class="text-xl uppercase lg:ml-6">TRANSACTION</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Hero section finished -->
+        
+        <!-- Handle section started -->
+        <section class="handle">
+            <div class="container">
+                <div class="flex flex-col md:flex-row">
+                    <div class="text-white text-center md:text-left w-full md:w-2/4">
+                        <h2 class="handle__title font-semibold text-3xl md:text-4xl lg:text-5xl">
+                            You do the business, we’ll handle the money.
+                        </h2>
+                        <div style="max-width: 550px;">
+                            <p class="leading-8 text-lg opacity-60 my-6 lg:mb-12">
+                                With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.
+                            </p>
+                        </div>
+                        <a class="handle__button inline-block text-lg font-medium rounded-xl" href="#">Get Started</a>
+                    </div>
+                    
+                    <div class="w-full md:w-2/4 mt-12 md:mt-0 flex justify-center md:block">
+                        <ul class="handle__list float-right text-white">
+                            <li class="handle__item  relative">
+                                <h3 class="font-semibold text-lg capitalize">Rewards</h3>
+                                <p class="opacity-60 leading-6 text-xs md:text-base">
+                                    The best credit cards offer some tantalizing combinations of promotions and prizes
+                                </p>
+                            </li>
+                            <li class="handle__item  relative">
+                                <h3 class="font-semibold text-lg capitalize">Rewards</h3>
+                                <p class="opacity-60 leading-6 text-xs md:text-base">
+                                    The best credit cards offer some tantalizing combinations of promotions and prizes
+                                </p>
+                            </li>
+                            <li class="handle__item  relative">
+                                <h3 class="font-semibold text-lg capitalize">Rewards</h3>
+                                <p class="opacity-60 leading-6 text-xs md:text-base">
+                                    The best credit cards offer some tantalizing combinations of promotions and prizes
+                                </p>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Handle section finished -->
+        
+        <!-- Control secton started -->
+        <section class="handle handle-two pt-28 md:pt-40">
+            <div class="container">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="w-full md:w-2/4 mt-12 md:mt-0 flex justify-center md:block pb-7 md:pb-0">
+                        <img src="./images/control.png"
+                        width="530"
+                        height="455"
+                        alt="Control image">
+                    </div>
+                    
+                    <div class="text-white text-center md:text-left w-full md:w-2/4">
+                        <h2 class="handle__title font-semibold text-3xl md:text-4xl lg:text-5xl">
+                            You do the business, we’ll handle the money.
+                        </h2>
+                        <div style="max-width: 470px;">
+                            <p class="leading-8 text-lg opacity-60 my-6 lg:mb-12">
+                                Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.
+                            </p>
+                        </div>
+                        <span class="flex">
+                            <a class="mr-8" href="https://www.apple.com/ru/app-store/" target="blank">
+                                <img src="./images/icons/appstore.svg"
+                                width="127"
+                                height="42"
+                                alt="appstore">
+                            </a>
+                            
+                            <a href="https://play.google.com/store/games?hl=ru&gl=US" target="blank">
+                                <img src="./images/icons/google-play.svg"
+                                width="144"
+                                height="43"
+                                alt="google-play">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Control secton finished -->
+        
+        <!-- Deal section started -->
+        <section class="handle  pt-28 md:pt-40 md:pb-40 pb-8">
+            <div class="container">
+                <div class="flex flex-col md:flex-row">
+                    <div class="text-white text-center md:text-left w-full md:w-2/4">
+                        <h2 class="handle__title font-semibold text-3xl md:text-4xl lg:text-5xl">
+                            Find a better card deal in few easy steps.
+                        </h2>
+                        <div style="max-width: 490px;">
+                            <p class="leading-8 text-lg opacity-60 my-6 lg:mb-12">
+                                Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+                            </p>
+                        </div>
+                        <a class="handle__button inline-block text-lg font-medium rounded-xl" href="#">Get Started</a>
+                    </div>
+                    
+                    <div class="w-full md:w-2/4 mt-12 md:mt-0 flex justify-center md:block">
+                        <img class="float-right" src="./images/deal.png"
+                        srcset="./images/deal.png 1x, ./images/deal@2x.png 2x"
+                        width="513"
+                        height="449"
+                        alt="deal image">                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Deal section finished -->
+        
+        <!-- Feedback section started -->
+        <section class="feedback pt-10 lg:pt-0 pb-24">
+            <div class="container">
+                <div class="flex flex-col md:flex-row text-white text-center md:text-left md:items-center mb-12 md:mb-20 md:justify-between lg:justify-start ">
+                    <div class="feedback__title__wrapper md:mr-36 mx-auto">
+                        <h2 class="feedback__title text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 md:mb-0 leading-10">
+                            What people are saying about us
+                        </h2>
+                    </div>
+                    <div class="feedback__desc__wrapper mx-auto">
+                        <p class="font-normal text-lg opacity-70 leading-8">
+                            Everything you need to accept card payments and grow your business anywhere on the planet.
+                        </p>
+                    </div>
+                </div>
+                
+                <ul class="p-0 m-0 flex flex-col md:flex-row flex-wrap text-white">
+                    <li class="pt-32 px-10 pb-14 rounded-3xl feedback__item mx-auto relative">
+                        <p class="text-lg font-normal leading-8 mb-7">
+                            Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.
+                        </p>
+                        <div class="pl-16 relative before:absolute feedback__subwrapper feedback__subwrapper__one before:rounded-full">
+                            <h3 class="text-sm sm:text-xl">Herman Jensen</h3>
+                            <span class="text-sm sm:text-base opacity-50">Founder & Leader</span>
+                        </div>
+                    </li>
+                    
+                    <li class="pt-32 px-10 rounded-3xl feedback__item mx-auto relative my-4 lg:my-0">
+                        <p class="text-lg font-normal leading-8 mb-14">
+                            Money makes your life easier. If you're lucky to have it, you're lucky.
+                        </p>
+                        <div class="pl-16 relative before:absolute feedback__subwrapper feedback__subwrapper__two before:rounded-full">
+                            <h3 class="text-sm sm:text-xl">Steve Mark</h3>
+                            <span class="text-sm sm:text-base opacity-50">Founder & Leader</span>
+                        </div>
+                    </li>
+                    
+                    <li class="pt-32 px-10 pb-14 rounded-3xl feedback__item mx-auto relative">
+                        <p class="text-lg font-normal leading-8 mb-7">
+                            It is usually people in the money business, finance, and international trade that are really rich.
+                        </p>
+                        <div class="pl-16 relative before:absolute feedback__subwrapper feedback__subwrapper__three before:rounded-full">
+                            <h3 class="text-sm sm:text-xl">Kenn Gallagher</h3>
+                            <span class="text-sm sm:text-base opacity-50">Founder & Leader</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Feedback section ended -->
+        
+        <!-- Aside section started -->
+        <aside class="pb-24">
+            <h2 class="visually-hidden">HooBank Advertisement</h2>
+            <div class="container">
+                <ul class="p-0 m-0 flex flex-col md:flex-row md:justify-between items-center">
+                    <li>
+                        <a href="#" target="blank">
+                            <img src="./images/icons/airbnb.svg"
+                            width="192"
+                            height="60"
+                            alt="airbnb">
+                        </a>
+                        
+                    </li>
+                    <li class="my-10">
+                        <a href="#" target="blank">
+                            <img src="./images/icons/binance.svg"
+                            width="192"
+                            height="60"
+                            alt="airbnb">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="blank">
+                            <img class="md:pb-3" src="./images/icons/coinbase.svg"
+                            width="192"
+                            height="60"
+                            alt="airbnb">
+                        </a>
+                    </li>
+                    <li class="mt-10">
+                        <a href="#" target="blank">
+                            <img class="md:pb-10" src="./images/icons/dropbox.svg"
+                            width="192"
+                            height="60"
+                            alt="airbnb">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Aside section finished-->
+        
+        <!-- Let's try section started -->
+        <section class="lets">
+            <div class="container">
+                <div class="text-center flex flex-col md:flex-row md:justify-between md:items-center lets__wrapper">
+                    <div class="text-white text-center mx-auto md:mx-0 md:text-left flex flex-col">
+                        <h2 class="font-semibold text-2xl md:text-3xl lg:text-5xl mb-6">
+                            Let’s try our service now!
+                        </h2>
+                        <div class="max-w-md">
+                            <p class="opacity-70 font-normal text-lg">
+                                Everything you need to accept card payments and grow your business anywhere on the planet.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="inline-block py-5 px-8 lets__button mt-7 md:mt-0" href="#">Get Started</a>
+                </div>
+            </div>
+        </section>
+        <!-- Let's try section finished -->
+    </main>
+    
+    <!-- Site footer started -->
+    <footer class="site-footer pt-20 md:pt-20">
+        <div class="container">
+            <div class="site-footer__wrapper pt-20 flex flex-col md:flex-row md:justify-between md:text-left text-center text-white pb-10">
+                <div class="max-w-xs mx-auto md:mx-0">
+                    <a class="inline-block mb-9" href="./index.html">
+                        <img src="./images/icons/site-footer__logo.svg"
+                        width="266"
+                        height="72"
+                        alt="Site footer logo">
+                    </a>
+                    <p class="font-normal text-lg opacity-70 leading-8 pl-6">
+                        A new way to make the payments easy, reliable and secure.
+                    </p>
+                </div>
+                
+                <div class="my-9 md:my-0">
+                    <span class="text-lg font-medium mb-6 inline-block">Usefull Links</span>
+                    <ul class="">
+                        <li class="mb-3 opacity-60 hover:opacity-100">
+                            <a href="#">Content</a>
+                        </li>
+                        <li class="mb-3 opacity-60 hover:opacity-100">
+                            <a href="#">How it Works</a>
+                        </li>
+                        <li class="mb-3 opacity-60 hover:opacity-100">
+                            <a href="#">Create</a>
+                        </li>
+                        <li class="mb-3 opacity-60 hover:opacity-100">
+                            <a href="#">Explore</a>
+                        </li>
+                        <li class="opacity-60 hover:opacity-100">
+                            <a href="#">Terms & Services</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <span class="text-lg font-medium mb-6 inline-block">Community</span>
+                    <ul>
+                        <li class="mb-3 opacity-60 hover:opacity-100">
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li class="mb-3 opacity-60 hover:opacity-100">
+                            <a href="#">Partners</a>
+                        </li>
+                        <li class="mb-3 opacity-60 hover:opacity-100">
+                            <a href="#">Suggestions</a>
+                        </li>
+                        <li class="mb-3 opacity-60 hover:opacity-100">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="opacity-60 hover:opacity-100">
+                            <a href="#">Newsletters</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mt-9 md:mt-0">
+                    <span class="text-lg font-medium mb-6 inline-block">Partner</span>
+                    <ul>
+                        <li class="mb-3 opacity-60 hover:opacity-100">
+                            <a href="#">Our Partner</a>
+                        </li>
+                        <li class="opacity-60 hover:opacity-100">
+                            <a href="#">Become a Partner</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="opacity-60">
+            
+            <div class="text-white py-8 flex justify-center md:justify-between flex-col md:flex-row">
+                <div class="flex justify-center opacity-60 items-center">
+                    <p class="text-xs sm:text-base">
+                        Copyright
+                    </p>
+                    <p class="relative before:absolute text- sm:text-base site-footer__privacy">
+                        2021 HooBank. All Rights Reserved.
+                    </p>
+                </div>
+
+                <span class="flex items-center justify-center mt-5 md:mt-0">
+                    <a href="https://www.instagram.com/" target="blank">
+                        <img src="./images/icons/instagram.svg"
+                        width="21"
+                        height="21"
+                        alt="Instagram icon">
+                    </a>
+                    <a class="mx-8" href="https://www.facebook.com/" target="blank">
+                        <img src="./images/icons/facebook.svg"
+                        width="21"
+                        height="21"
+                        alt="Facebook icon">
+                    </a>
+                    <a href="https://twitter.com/?lang=ru" target="blank">
+                        <img src="./images/icons/twitter.svg"
+                        width="23"
+                        height="19"
+                        alt="Twitter icon">
+                    </a>
+                    <a class="ml-8" href="https://ru.linkedin.com/" target="blank">
+                        <img src="./images/icons/linkedin.svg"
+                        width="21"
+                        height="21"
+                        alt="Linkedin icon">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- Site footer ended -->
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>

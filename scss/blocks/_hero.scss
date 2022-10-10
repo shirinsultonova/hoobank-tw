@@ -1,0 +1,236 @@
+.hero{
+    padding-top: 187px;
+    padding-bottom: 180px;
+    background-image: url("../../images/hero-bg-2.png"), url("../../images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: left, calc(50% + 697px) -680px;
+}
+
+.hero__sub-wrapper{
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 55px;
+    background: linear-gradient(125.17deg, #272727 0%, #11101D 100%);
+    border-radius: 10px;
+    &::before{
+        background-image: url("../../images/icons/hero-discount.svg");
+        background-repeat: no-repeat;
+        content: "";
+        left: 10px;
+        bottom: 5px;
+    }
+    & > p{
+        line-height: 150%;
+        color: #A3A2A6;
+    }
+}
+
+.hero__heading{
+    margin-top: 0;
+    letter-spacing: 0.01em;
+    line-height: 100px!important;
+}
+
+.hero__wrapper{
+    &::after{
+        content: "";
+        background-image: url("../../images/icons/get-started.svg");
+        background-repeat: no-repeat;
+        width: 140px;
+        height: 140px;
+        top: 70px;
+        left: 470px;
+    }
+}
+
+.hero__heading-span{
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero__description-wrapper{
+    width: 100%;
+    max-width: 483px;
+}
+
+.hero__description{
+    line-height: 170%!important;
+}
+
+@media screen and (max-width: 1024px){
+    .hero{
+        background-position: left, calc(50% + 550px) -680px;
+    }
+    .hero__wrapper{
+        &::after{
+            top: 50px;
+            left: 390px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hero__wrapper{
+        &::after{
+            top: 50px;
+            left: 390px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
+    .hero{
+        background-position: left, calc(50% + 450px) -680px;
+    }
+    .hero__wrapper{
+        &::after{
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            top: 55px;
+            left: 340px;
+        }
+    }
+}
+
+@media screen and (max-width: 463px){
+    .hero__wrapper{
+        &::after{
+            width: 95px;
+            height: 95px;
+            background-size: cover;
+            top: 35px;
+            left: 240px;
+        }
+    }
+}
+
+@media screen and (max-width: 373px){
+    .hero__wrapper{
+        &::after{
+            width: 75px;
+            height: 75px;
+            background-size: cover;
+            top: 105px;
+            left: 200px;
+        }
+    }
+    
+    .hero__sub-wrapper{
+        & > p{
+            font-size: 11px;
+        }
+        &::before{
+            background-image: url("../../images/icons/hero-discount.svg");
+            background-repeat: no-repeat;
+            content: "";
+            left: 10px;
+            bottom: 0px;
+        }
+    }
+    .hero__heading{
+        font-size: 30px!important;
+    }
+    
+    
+}
+
+.hero__list{
+    padding-top: 143px;
+}
+
+.hero__cost{
+    font-size: 40.8925px;
+    line-height: 130%;
+}
+
+.hero__item span{
+    line-height: 130%;
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.hero__item:nth-child(2){
+    position: relative;
+    &::before{
+        position: absolute;
+        top: 50%;
+        left: -55px;
+        width: 1px;
+        height: 14px;
+        background: #E5E5E5;
+        background-repeat: no-repeat;
+        content: "";
+    }
+    &::after{
+        position: absolute;
+        top: 50%;
+
+        right: -55px;
+        width: 1px;
+        height: 14px;
+        background: #E5E5E5;
+        background-repeat: no-repeat;
+        content: "";
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .hero__item:nth-child(2){
+        position: relative;
+        &::before{
+            position: absolute;
+            top: 35%;
+            left: -70px;
+            width: 1px;
+            height: 14px;
+            background: #E5E5E5;
+            background-repeat: no-repeat;
+            content: "";
+        }
+        &::after{
+            position: absolute;
+            top: 35%;
+            right: -70px;
+            width: 1px;
+            height: 14px;
+            background: #E5E5E5;
+            background-repeat: no-repeat;
+            content: "";
+        }
+    }
+}
+
+@media only screen and (max-width: 1210px){
+    .hero__item:nth-child(2){
+        position: relative;
+        &::before{
+            position: absolute;
+            top: 35%;
+            left: -45px;
+            width: 1px;
+            height: 14px;
+            background: #E5E5E5;
+            background-repeat: no-repeat;
+            content: "";
+        }
+        &::after{
+            position: absolute;
+            top: 35%;
+            right: -45px;
+            width: 1px;
+            height: 14px;
+            background: #E5E5E5;
+            background-repeat: no-repeat;
+            content: "";
+        }
+    }
+}
